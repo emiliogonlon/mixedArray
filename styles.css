@@ -21,18 +21,18 @@ nav ul li {
 
 /* breadcrumb */
 
- ul.breadcrumb {
+ #breadcrumb ul{
     padding: 10px 16px;
     list-style: none;
     background-color: rgb(233, 233, 233);
   }
   
-  ul.breadcrumb li {
+  #breadcrumb ul li {
     display: inline;
     font-size: 18px;
   }
   
-  ul.breadcrumb li+li:before {
+  #breadcrumb ul li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";

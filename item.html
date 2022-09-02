@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/cjb7aqm.css">
 </head>
 <body>
-    <script src="/scripts.js"></script>
     <header>
         <h1 class="hidden">
             mixedArray() outfitters
@@ -25,41 +24,59 @@
                 <li>List</li>
             </ul>
         </nav>
-        <nav>
-            <!-- <template id="breadcrumbstempl"> -->
-                <ul class="breadcrumb">
+        <nav id="breadcrumb">
+            <!-- <template id="breadcrumbtempl"> -->
+                <ul id="bcul">
                     <li>
                         <a href=#>Home</a>
                     </li>
-                    <li>
-                        <a class="brand" href=#>[Brand]</a>
+                    <li id="bc1">
+                        <a class="brand" href=#>Category</a>
                     </li>
-                    <li>
-                        <a href=# class="category">[Category]</a>
+                    <li id="bc2">
+                        <a href=# class="category">Sex</a>
+                    </li>
+                    <li class="bc3">
+                        <a href="#" class="da">Season</a>
                     </li>
                 </ul>
             <!-- </template> -->
         </nav>
     </header>
     <main>
-        <h2 class="itemName">[item]</h2>
-        <p class="brand"></p>
         <section id="iteminfo">
             <!-- <template id="listeditem"> -->
                 <article>
+                    <h2 class="itemName">[item]</h2>
+                    <p class="brand">[brand]</p>
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-5b22bc23f911c81d006fac1a.closte.com%2Fwp-content%2Fuploads%2F2018%2F09%2F180922_city-3525093.jpg&f=1&nofb=1" alt="" class="fullpreview">
-                    <p class="itemdescription">
+                    <section class="subhead">
+                        <p class="itemdescription">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    </p>
-                    <p class="price">
-                        1515
-                    </p>
-                    <p class="price">
-                        H&M
-                    </p>
+                        </p>
+                        <button class="buybtn">
+                            1515 kr.
+                        </button>
+                    </section>
+                    <section class="itemcharacteristics">
+                        <p>Brand:</p>
+                        <p class="brand">
+                            H&M
+                        </p>
+                        <p>Sizes</p>
+                        <ol class="sizes">
+                            <li>S</li>
+                            <li>M</li>
+                            <li>L</li>
+                        </ol>
+                    </section>
                 </article>
             <!-- </template> -->
         </section>
+        <aside>
+            hehehe this is a super dooper aside section
+        </aside>
     </main>
+    <script src="/scripts.js"></script>
 </body>
 </html>
