@@ -1,6 +1,7 @@
 body {
     background-color: rgb(214, 214, 214);
     font-family: articulat-cf, sans-serif;
+    padding: 1.5%;
 }
 
 nav ul {
@@ -17,3 +18,33 @@ nav ul li {
 .hidden {
     display: none;
 }
+
+/* breadcrumb */
+
+ ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: rgb(233, 233, 233);
+  }
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {
+    color: #575757;
+    text-decoration: none;
+  }
+  
+  ul.breadcrumb li a:hover {
+    background-color: #bebebe;
+  }
+
+  
